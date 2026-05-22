@@ -11,7 +11,9 @@
     "lucide-react": "^0.263.1"
   },
   "scripts": {
-  "build": "vite build"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
 }
   "browserslist": {
     "production": [">0.2%","not dead","not op_mini all"],
