@@ -1,0 +1,51 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#f0f4f8;color:#1a2b3c;line-height:1.5}
+:root{
+  --primary:#1e3a5f;--primary-l:#2d5f8a;--accent:#0ea5e9;--accent-h:#0284c7;
+  --success:#10b981;--danger:#ef4444;--warning:#f59e0b;
+  --surface:#fff;--surface2:#f8fafc;--border:#e2e8f0;--text:#1a2b3c;--text2:#64748b;--muted:#94a3b8;
+  --r:10px;--r-sm:6px;--r-lg:16px
+}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:var(--r-sm);font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all .15s;white-space:nowrap;font-family:inherit;text-decoration:none}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn-primary{background:var(--primary);color:#fff}.btn-primary:hover:not(:disabled){background:var(--primary-l)}
+.btn-success{background:var(--success);color:#fff}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--text)}.btn-outline:hover:not(:disabled){border-color:var(--primary);color:var(--primary);background:#f0f4f8}
+.btn-sm{padding:5px 12px;font-size:12.5px}
+.btn-lg{padding:12px 26px;font-size:15px}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid var(--border)}
+.card-header{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.card-body{padding:22px}
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:12px;font-weight:600;color:var(--text2);margin-bottom:5px;text-transform:uppercase;letter-spacing:.05em}
+.form-control{width:100%;padding:9px 13px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:14px;color:var(--text);background:#fff;transition:border-color .15s;outline:none;font-family:inherit}
+.form-control:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(14,165,233,.1)}
+.form-control::placeholder{color:var(--muted)}
+.table{width:100%;border-collapse:collapse;font-size:13.5px}
+.table th{padding:10px 16px;text-align:left;font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;background:var(--surface2);border-bottom:1px solid var(--border)}
+.table td{padding:11px 16px;border-bottom:1px solid #f1f5f9;color:var(--text)}
+.table tr:last-child td{border-bottom:none}
+.table tbody tr:hover td{background:#f8fafc}
+.badge{display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:500}
+.badge-blue{background:#dbeafe;color:#1e40af}
+.badge-green{background:#d1fae5;color:#065f46}
+.badge-red{background:#fee2e2;color:#991b1b}
+.badge-yellow{background:#fef3c7;color:#92400e}
+.badge-gray{background:#f1f5f9;color:#475569}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+.modal{background:#fff;border-radius:var(--r-lg);width:100%;max-width:500px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.modal-header{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.modal-body{padding:22px}
+.modal-footer{padding:14px 22px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}
+.gap-2{gap:8px}.gap-3{gap:12px}.gap-4{gap:16px}
+.mt-3{margin-top:12px}.mt-4{margin-top:16px}.mb-3{margin-bottom:12px}.mb-4{margin-bottom:16px}.mb-6{margin-bottom:24px}
+.text-muted{color:var(--muted)}.text-2{color:var(--text2)}.text-danger{color:var(--danger)}
+.page-title{font-size:22px;font-weight:700;color:var(--primary)}
+.page-sub{font-size:13px;color:var(--text2);margin-top:3px}
+.spinner{width:17px;height:17px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+input[type=number]{-moz-appearance:textfield}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
